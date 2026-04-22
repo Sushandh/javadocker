@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('maven installation') {
             steps {
-                sh 'sudo dnf i nstall maven -y'
+                sh 'sudo dnf install maven -y'
             }
         }
         stage('package build') {
