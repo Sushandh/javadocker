@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+  label 'mynode'
+}
 
     stages {
         stage('maven installation in javadocker') {
